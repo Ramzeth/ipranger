@@ -1,4 +1,4 @@
-module github.com/projectdiscovery/ipranger
+module github.com/Ramzeth/ipranger
 
 go 1.14
 
