@@ -85,7 +85,7 @@ func (ir *IPRanger) IsValid(host string) bool {
 
 func (ir *IPRanger) Delete(host string) error {
 	// skip invalid
-	if ir.Np.Validate(host) {
+	if !ir.Np.Validate(host) {
 		return errors.New("invalid host")
 	}
 
